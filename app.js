@@ -1,17 +1,20 @@
-// comentários, variáveis, tipos de dados e funções
-// const - constante = não vai mudar
-// let - variável = pode mudar
-// let corBola
-// corBola = "azul"
+const app = document.getElementById('app')
 
-const corBola = "azul" + "escuro" //azulescuro
-const idade = 10 + 2 // 12
+const formAction = () => {
+    const form = document.getElementById('form')
+    form.onsubmit = (event) => {
+        event.preventDefault
+    }
+}
+const startApp = () => {
+    const content = `
+    <form id="form">
+        <input type="email" name="email" placeholder="Email">
+        <input type="text" name="telefone" placeholder="Telefone">
+        <button>Confirmar</button>
+    </form>`
 
-// arrow function
-const soma = (a, b) => {
-    return a + b
+    app.innerHTML = content
 }
 
-const resultado = soma("alo", 20)
-
-alert (resultado)
+startApp()
