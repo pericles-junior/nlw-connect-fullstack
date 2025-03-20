@@ -25,6 +25,7 @@ const users = [
         phone: '999999999',
         ref: 400,
         refBy: 200
+    }
 ]
 
 const getUser = (userData) => {
